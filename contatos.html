@@ -19,7 +19,12 @@
 
             <form id="frmInscricao" action="" method="post">
               <label>nome:</label><br />
-              <input type="text" required="required" maxlength="100%" id="" />
+              <input
+                type="text"
+                required="required"
+                maxlength="100%"
+                id=""
+              /><br />
 
               <label>Sexo:</label><br />
               <input
@@ -28,6 +33,76 @@
                 value="M"
                 required="required"
               />
+              <label>Masculino</label>
+
+              <input
+                type="radio"
+                name="rdoSexo"
+                value="F"
+                required="required"
+              />
+              <label>Feminino</label>
+              <br /><br />
+
+              <label> Estado:</label><br />
+              <select required="required" id="cbxEstado">
+                <option value="">-Selecione-</option>
+                <option value="1">SC</option>
+                <option value="2">MG</option>
+                <option value="3">PE</option>
+              </select>
+              <br />
+              <br />
+
+              <label> Cidade:</label><br />
+              <select required="required" id="cbxCidade">
+                <option value="">-Selecione-</option>
+                <option value="1">Salgueiro</option>
+                <option value="2">Petrolina</option>
+                <option value="3">Minas Gerais</option>
+              </select>
+              <br />
+              <br />
+
+              <label>Endereço:</label> <br />
+              <input type="text" required="required" maxlength="100%" /><br />
+
+              <label> E-mail:</label><br />
+              <input
+                type="email"
+                required="required"
+                size="50"
+                id="txtEmail"
+              /><br /><br />
+
+              <label> Celular:</label><br />
+              <input
+                type="text"
+                placeholder="(xx)x.xxxx-xxxx"
+                required="required"
+                size="50"
+                id="txtCelular"
+              /><br /><br />
+
+              <label>Áreas de Interesse:</label>
+              <input
+                type="checkbox"
+                value="JavaScript"
+                name="chkAreasinteresse"
+              />
+              <label>JavaScript</label>
+              <input type="checkbox" value="PHP" name="chkAreasinteresse" />
+              <label>PHP</label>
+              <input type="checkbox" value="HTML" name="chkAreasinteresse" />
+              <label>HTML</label>
+              <input type="checkbox" value="CSS" name="chkAreasinteresse" />
+              <label>CSS</label>
+              <input type="checkbox" value="Java" name="chkAreasinteresse" />
+              <label>Java</label>
+              <input type="checkbox" value="C#" name="chkAreasinteresse" />
+              <label>C#</label>
+              <input type="checkbox" value="Angular" name="chkAreasinteresse" />
+              <label>Angular</label>
             </form>
           </fieldset>
         </article>
