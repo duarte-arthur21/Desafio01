@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Exemplo</title>
   </head>
   <body>
-    <form>
-      <fieldset>
-        <input type="text" placeholder="Digite seu nome" /><br />
-        <input type="password" placeholder="Digite sua senha" /><br />
-        <input type="email" placeholder="Digite seu e-mail" /><br />
-        <input type="number" placeholder="Digite um número" /><br />
-        <input type="radio" id="rdoF" name="rdoSexo" value="F" />
-        <label for="rdoF">Feminino</label>
-        <input type="radio" id="rdoM" name="rdoSexo" value="M" />
-        <label for="rdoM">Masculino</label><br />
-        <input type="checkbox" id="chkManha" name="chkManha" checked />
-        <label for="scales">Manhã</label>
-        <input type="checkbox" id="chkTarde" name="chkTarde" />
-        <label for="chkTarde">Tarde</label><br />
-        <input type="file" /><br />
-        <input type="color" /><br />
-        <input type="time" /><br />
-        <input type="date" /><br />
-        <input type="datetime-local" /><br />
-        <textarea cols="30" rows="5"></textarea><br />
-        <select>
-          <option value="">-Selecione-</option>
-          <option value="HTML">HTML</option>
-          <option value="CSS">CSS</option>
-          <option value="JavaScript">JavaScript</option></select
-        ><br />
-        <input type="submit" value="Enviar" />
-      </fieldset>
-    </form>
+    <main>
+      <section>
+        <article>
+          <h1>Formulário de Contatos</h1>
+          <p>Preencha os dados abaixo e envie sua mensagem de Contato.</p>
+
+          <fieldset>
+            <legend>
+              <h5>Dados de Contato</h5>
+            </legend>
+
+            <form id="frmInscricao" action="" method="post">
+              <label>nome:</label><br />
+              <input type="text" required="required" maxlength="100%" id="" />
+
+              <label>Sexo:</label><br />
+              <input
+                type="radio"
+                name="rdoSexo"
+                value="M"
+                required="required"
+              />
+            </form>
+          </fieldset>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
